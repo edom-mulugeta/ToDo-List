@@ -1,55 +1,78 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-.container{
-   background-color: #FF74D4;
-    height:100vh;
-    width:100%;
-    padding:10px;
-
+.container {
+  background-color: #ff74d4;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
 }
- .todo_app{
-    width: 100%;
-    max-width:540px;
-    background: #fff;
-    margin:100px auto 20px;
-    padding:40px 30px 70px;
-    border-radius: 15px;
-
+.todo_app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 15px;
 }
-h1{
-    color:#FF74D4;
-    display:flex;
-    align-items:center;
-    margin-bottom: 20px;
+h1 {
+  color: #ff74d4;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.container .todo_app img{
-    height: 40px;
+.container .todo_app img {
+  height: 40px;
 }
-.row{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
 }
-#input-box{
-     border-radius: 25px;
-    padding:8px 15px;
-    border:none;
-    outline:none;
-    background: transparent;
-    padding:10px;
-    font-weight:14px;
+#input-box {
+  border-radius: 25px;
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
 }
-button{
-    border-radius: 25px;
-    padding:16px;
-     border:none;
-    outline:none;
-    font-weight: 14px;
+button {
+  border-radius: 25px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  font-weight: 14px;
+}
+ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("images/unchecked-28.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url("images/checked.png");
 }
