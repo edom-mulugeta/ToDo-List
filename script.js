@@ -9,7 +9,7 @@ function AddItem() {
     li.textContent = input.value;
 
     let span = document.createElement("span");
-    span.textContent = "\u00D7"; // Unicode for multiplication sign (×)
+    span.textContent = "\u00D7"; 
     span.className = "close";
     span.onclick = function () {
       list.removeChild(li);
